@@ -1,6 +1,6 @@
 # vue3-precoro-test-task
 
-This template should help get you started developing with Vue 3 in Vite.
+Link app-invite-user.netlify.app
 
 ## Recommended IDE Setup
 
