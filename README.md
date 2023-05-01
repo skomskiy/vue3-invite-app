@@ -1,6 +1,6 @@
 # vue3-precoro-test-task
 
-[Netlify link] (app-invite-user.netlify.app)
+[Netlify link](app-invite-user.netlify.app)
 
 ## Recommended IDE Setup
 
