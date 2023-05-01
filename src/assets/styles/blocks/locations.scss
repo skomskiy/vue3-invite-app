@@ -1,0 +1,35 @@
+.locations {
+  &__main {
+    width: 345px;
+    margin: 20px 0 24px;
+
+    &_title {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: rgba(29, 36, 82, 0.5);
+    }
+
+    &_star {
+      font-size: 12px;
+      color: #F5455A;
+    }
+
+  }
+
+  &__available {
+    margin: 0 0 40px;
+    padding: 0;
+
+    &_title {
+      display: block;
+      margin-bottom: 10px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 144%;
+      color: #1D2452;
+      opacity: 0.6;
+    }
+  }
+}

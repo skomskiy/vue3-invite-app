@@ -1,0 +1,11 @@
+.listGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 600px;
+  padding: 0;
+  margin-bottom: 36px;
+
+  @include onMobile() {
+    display: block;
+  }
+}

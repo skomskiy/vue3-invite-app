@@ -1,0 +1,55 @@
+.alert {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  width: 636px;
+  background: rgba(244, 244, 255, 0.5);
+  border-radius: 8px;
+  margin-bottom: 52px;
+
+  @include onTablet {
+    width: 550px;
+    height: inherit;
+  }
+
+  @include onMobile() {
+    width: inherit;
+    height: inherit;
+  }
+
+  &__img {
+    height: 24px;
+    opacity: 50%;
+    margin: 16px 8px 16px 12px;
+    cursor: pointer;
+
+    &_management {
+      height: 24px;
+      opacity: 50%;
+      vertical-align: top;
+      cursor: pointer;
+    }
+
+    &_warning {
+      height: 24px;
+      margin-left: 16px;
+
+      @include onTablet {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130.02%;
+    color: rgba(29, 36, 82, 0.5);
+  }
+}
+
+.error {
+  border-color: #F5455A;
+}

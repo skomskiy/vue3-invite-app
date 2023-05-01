@@ -1,0 +1,17 @@
+.roles {
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 308px;
+    border-left: 1px solid #DDDEE5;
+    margin-left: 522px;
+    margin-top: 28px;
+
+    @include onTablet {
+      margin-left: 335px;
+      margin-top: 20px;
+      height: 340px;
+    }
+  }
+}

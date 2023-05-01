@@ -1,0 +1,135 @@
+.table {
+  width: 100%;
+
+  &__body {
+    display: grid;
+    grid-row-gap: 16px;
+    margin-bottom: 32px;
+
+    @include onMobile {
+      margin-bottom: 380px;
+      margin-top: 20px;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 4fr repeat(4, 1.6fr) 300px;
+
+    @include onTablet {
+      grid-template-columns: 6fr repeat(4, 3.5fr) 210px;
+    }
+
+    @include onMobile {
+      grid-template-columns: 170px repeat(5, 35px);
+
+    }
+
+    &_head {
+      @include onMobile {
+        position: absolute;
+        top: 540px;
+      }
+    }
+  }
+
+  &__headline {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #676F8F;
+    margin: auto;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @include onTablet {
+      margin: auto;
+    }
+
+    @include onMobile {
+      transform: rotate(90deg);
+      margin: auto;
+      height: 18px;
+      width: 20px;
+    }
+
+    &_first {
+      margin-left: 0;
+
+      @include onMobile {
+        transform: none;
+        text-align: left;
+        width: 100px;
+      }
+    }
+
+    &_last {
+      margin-left: 45px;
+      vertical-align: middle;
+
+      @include onTablet {
+        margin-left: 0;
+        width: 200px;
+      }
+
+      @include onMobile {
+        position: relative;
+        right: 330px;
+        top: 80px;
+        transform: none;
+      }
+
+    }
+  }
+
+  &__checkbox {
+    margin: auto;
+
+    &_last {
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1D2452;
+      margin-left: 45px;
+
+      @include onTablet {
+        margin-left: 10px;
+        width: 200px;
+      }
+
+      @include onMobile {
+        position: relative;
+        right: 330px;
+        top: 390px;
+
+      }
+    }
+
+    &_admin {
+      @include onMobile {
+        position: relative;
+        top: 350px;
+      }
+    }
+
+    &_items {
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1D2452;
+    }
+
+    &_all {
+      font-weight: 500;
+    }
+  }
+}

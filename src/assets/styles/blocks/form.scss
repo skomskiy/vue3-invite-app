@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  margin-bottom: 54px;
+
+  @include onTablet {
+    display: block;
+  }
+
+  @include onMobile() {
+    display: block;
+  }
+
+  &__first {
+    margin-right: 20px;
+  }
+}

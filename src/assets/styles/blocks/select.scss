@@ -1,0 +1,48 @@
+.select {
+  position: relative;
+
+  &__title {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(29, 36, 82, 0.1);
+    border-radius: 8px;
+    line-height: 144%;
+    color: #1D2452;
+    padding: 8px 9px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    @include onMobile() {
+      width: 310px;
+    }
+  }
+
+  &__options {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    border: 1px solid rgba(29, 36, 82, 0.1);
+    z-index: 1;
+
+    @include onMobile() {
+      width: 310px;
+      right: 34px;
+    }
+  }
+
+  &__option {
+    position: relative;
+    padding: 10px;
+    margin: 0;
+    background: white;
+    color: #1D2452;
+
+  }
+
+  &__option:hover {
+    color: #415ADA;
+    cursor: pointer;
+  }
+}

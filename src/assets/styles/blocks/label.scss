@@ -1,0 +1,42 @@
+.label {
+  display: block;
+  width: 345px;
+  margin-top: 20px;
+
+  &__span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(29, 36, 82, 0.5);
+  }
+
+  &__input {
+    display: block;
+    width: 346px;
+    border: 1px solid rgba(29, 36, 82, 0.1);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 144%;
+    color: #1D2452;
+    padding: 8px 9px;
+    appearance: none;
+    box-sizing: border-box;
+
+    @include onMobile() {
+      width: 310px;
+    }
+  }
+
+  &__selector_label {
+    display: inline;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    /* Chrome, Safari, Edge */
+    margin: 0;
+  }
+}
