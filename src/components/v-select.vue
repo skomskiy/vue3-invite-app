@@ -50,7 +50,7 @@
       @click="areOptionsVisible = !areOptionsVisible"
     >
       {{ selected }}
-      <img src="../../public/img/Polygon 2.svg" alt="Select company">
+      <img src="../../public/img/Polygon2.svg" alt="Select company">
     </p>
     
     <div 
